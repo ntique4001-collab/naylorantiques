@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Naylor Antiques provides expert assessment and appraisal of American furniture, decorative arts, and fine art, specializing in Maryland and Mid-Atlantic antiques. Essays on Baltimore Federal furniture, Maryland Chippendale, Queen Anne, and colonial cabinetmakers.">
+<meta name="keywords" content="Maryland antiques, Baltimore Federal furniture, Chippendale furniture, Queen Anne furniture, Maryland appraisals, antique appraisals Maryland, decorative arts, fine art appraisal, Mid-Atlantic furniture, Baltimore carved bellflowers, piecrust tea table, Charles Belt, Georgetown furniture, colonial Maryland furniture, Annapolis furniture, Prince George's County, early American furniture, estate appraisals, insurance appraisals, Stevenson Maryland, Green Spring Valley">
+<title>Naylor Antiques — Early American Furniture, Decorative Arts, & Fine Art Consultation and Commentary</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #2d4a3e;
+  --navy-light: #3a5d4f;
+  --cream: #faf8f4;
+  --cream-dark: #f0ece4;
+  --gold: #b8952a;
+  --gold-light: #d4af37;
+  --gold-muted: #c9a84c;
+  --burgundy: #6b2d3e;
+  --text-dark: #2c2c2c;
+  --text-medium: #5a5a5a;
+  --text-light: #8a8a8a;
+  --border: #e0dcd4;
+  --white: #ffffff;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  color: var(--text-dark);
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.section-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.ornament {
+  display: block;
+  text-align: center;
+  color: var(--gold-muted);
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+  opacity: 0.6;
+}
+
+.rule {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  border: none;
+  margin: 1.5rem 0;
+}
+
+.rule-center { margin: 1.5rem auto; }
+
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(45, 74, 62, 0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(184, 149, 42, 0.2);
+  transition: all 0.3s ease;
+}
+
+nav.scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--cream);
+  letter-spacing: 0.05em;
+}
+
+.nav-brand span {
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(250, 248, 244, 0.7);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--white);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after { width: 100%; }
+
+/* Mobile menu */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--cream);
+  transition: all 0.3s ease;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(184, 149, 42, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(107, 45, 62, 0.05) 0%, transparent 60%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--white);
+  border: none;
+  margin: 0 auto 2.5rem;
+}
+
+.hero-logo {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.hero-tagline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-nav-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.hero-card {
+  background: rgba(250, 248, 244, 0.04);
+  border: 1px solid rgba(184, 149, 42, 0.2);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  min-width: 260px;
+}
+
+.hero-card:hover {
+  background: rgba(250, 248, 244, 0.07);
+  border-color: var(--gold-muted);
+  transform: translateY(-3px);
+}
+
+.hero-card h3 {
+  font-size: 1.2rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.hero-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(250,248,244,0.5);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 6rem 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  color: var(--text-medium);
+  font-size: 1rem;
+}
+
+/* ===== APPRAISALS SECTION ===== */
+#appraisals {
+  background: var(--white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.service-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: var(--gold-muted);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy);
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+}
+
+.appraisal-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.appraisal-detail h3 {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.appraisal-detail p {
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.detail-list {
+  margin-top: 1.5rem;
+}
+
+.detail-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+  color: var(--text-medium);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-list li::before {
+  content: '—';
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ===== ESSAYS SECTION ===== */
+#essays {
+  background: var(--cream);
+}
+
+.essays-intro {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.essays-intro p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  font-style: italic;
+}
+
+.essays-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.essay-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.essay-card:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.07);
+  transform: translateY(-2px);
+}
+
+.essay-image {
+  height: 400px;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.essay-image-placeholder {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-style: italic;
+  color: rgba(250,248,244,0.15);
+}
+
+.essay-body {
+  padding: 1.25rem 2rem 2rem;
+}
+
+.essay-date {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.essay-card h3 {
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.essay-card p {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+.read-more:hover { color: var(--burgundy); }
+
+/* ===== OUR STORY ===== */
+#story {
+  background: var(--white);
+}
+
+.story-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.story-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.story-photo {
+  width: 100%;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+}
+
+.story-text p {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  margin-bottom: 1.25rem;
+}
+
+.story-text blockquote {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+#contact .section-header h2 {
+  color: var(--cream);
+}
+
+#contact .section-header p {
+  color: rgba(250,248,244,0.6);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.contact-info h3 {
+  font-size: 1.4rem;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-item-icon {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-top: 0.2rem;
+}
+
+.contact-item-text h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.contact-item-text p {
+  color: rgba(250,248,244,0.7);
+  font-size: 0.92rem;
+}
+
+.contact-item-text a {
+  color: rgba(250,248,244,0.7);
+  transition: color 0.3s ease;
+}
+
+.contact-item-text a:hover { color: var(--white); }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: rgba(250,248,244,0.06);
+  border: 1px solid rgba(250,248,244,0.15);
+  padding: 0.85rem 1rem;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.9rem;
+  color: var(--cream);
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--white);
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-group select option {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.btn-submit {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--navy);
+  border-top: 1px solid rgba(184,149,42,0.15);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(250,248,244,0.35);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero h1 { font-size: 2.8rem; }
+  .hero-nav-cards { flex-direction: column; align-items: center; }
+  .hero-card { min-width: 280px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .appraisal-detail { grid-template-columns: 1fr; gap: 2.5rem; }
+  .essays-grid { grid-template-columns: 1fr; }
+  .story-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .story-images { gap: 1rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(45,74,62,0.98);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(184,149,42,0.15);
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.2rem; }
+  section { padding: 4rem 1.5rem; }
+  .section-header h2 { font-size: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">Naylor <span>Antiques</span></a>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#appraisals">Appraisals</a>
+      <a href="#essays">Essays</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <hr class="hero-rule">
+    <img src="header-logo-white.png" alt="Naylor Antiques" class="hero-logo">
+    <p class="hero-tagline">
+      Early American Furniture, Decorative Arts,<br>
+      &amp; Fine Art Consultation and Commentary
+    </p>
+    <div class="hero-nav-cards">
+      <a href="#appraisals" class="hero-card">
+        <h3>Assessments &amp; Appraisals</h3>
+        <p></p>
+      </a>
+      <a href="#essays" class="hero-card">
+        <h3>Essays &amp; Observations</h3>
+        <p></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ASSESSMENT & APPRAISALS ===== -->
+<section id="appraisals">
+  <div class="container">
+    <div class="section-header">
+      <h2>Assessments &amp; Appraisals</h2>
+      <hr class="rule rule-center">
+      <p>We have provided expert valuation of American furniture, decorative arts, and fine art for over 27 years.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">&#9670;</span>
+        <h3>Assessments</h3>
+        <p>Not all prospective clients necessarily know what they have. Maybe you own an individual item that you just discovered in the attic of your newly purchased home, or perhaps you inherited a sizable collection from a spinster aunt 20 years ago. We will be more than happy to give our opinion as to whether or not an item is worth appraising. You can use our email below to send us a brief description, dimensions if pertinent, and up to four images. We will not provide values for items we feel do not warrant your expense and our time. However, if your item appears to be of significance, and you want to move forward, we will discuss the different appraisal options that best suit your needs.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">&#9670;</span>
+        <h3>Estate Appraisals</h3>
+        <p>A Fair Market Value appraisal is for estate, donation, or equitable distribution purposes. FMV should not be used for insurance purposes. The value of an item may be based on three factors: the cost of reproducing it, the potential income of an item, and the market costs of like items. This appraisal's value is determined by using the market comparison approach to valuation. Fair Market Value reflects the price at which a property would change hands between a willing buyer and a willing seller, neither being under any compulsion to buy or sell, and both having reasonable knowledge of relevant facts.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">&#9670;</span>
+        <h3>Insurance Appraisals</h3>
+        <p>Comprehensive Replacement Value-Comparable appraisals are for insurance coverage, ensuring your collection is properly valued and protected. An RVC estimate reflects the cost of replacing a property with another of similar age, quality, origin, appearance, and condition within a reasonable length of time and in an appropriate and relevant market. The value of an item may be based on three factors: the cost of reproducing it, the potential income of an item, and the market costs of like items. This value is determined by using the market comparison approach to valuation. In some cases the most relevant market might be the retail level while in others, especially in the case of a rare and/or especially high quality item, the primary auction market is where an item might be most readily replaced. RVC appraisals should not be used for estate or other tax purposes.</p>
+      </div>
+    </div>
+
+    <div class="appraisal-detail" style="grid-template-columns: 1fr; max-width: 700px; margin: 5rem auto 0; text-align: center;">
+      <div>
+        <h3>The Appraisal Process</h3>
+        <p>A typical appraisal would involve an initial site visit where we inspect, survey, and take a digital image of each subject property. We then return to the office where the actual document is composed. Items are researched, comparables considered, and values assigned. The use of comparables is inherent to the process of evaluating even the lowest valued item. We standardly include a cross sample of comparables published in the appraisal itself, especially for rarer and/or higher value items. A hard copy will be provided along with a digital PDF of the final document, as well as a spreadsheet of the total inventory along with FMV or RVC amounts. Naylor Antiques does not generally undertake "full home contents" or "complete estate inventory" appraisals, unless either consists of a larger proportion of higher quality items.</p>
+        <p>We have conducted appraisals for numerous individuals, museums, businesses, and government agencies. Some past institutional clients include The Maryland Center for History and Culture, the Baltimore Museum of Art, Homewood Museum, the Star Spangled Banner Flag House, Hammond-Harwood House, First &amp; Franklin Presbyterian Church (Baltimore), the Howard County Historical Society, Morgan State University, Towson University, the University of Maryland at College Park, the Talbot Historical Society, Saint Mary's Seminary and University, Catholic University, Historic Waverly Mansion, Hampton National Historic Site, and the Maryland State Archives. Complete inventory appraisals have been completed for Mount Clare Museum House, the Mother Seton House, and the Archdiocese of Maryland.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARYLAND FURNITURE ESSAYS ===== -->
+<section id="essays">
+  <div class="container">
+    <div class="section-header">
+      <h2>Essays &amp; Observations</h2>
+      <hr class="rule rule-center">
+    </div>
+
+    <div class="essays-intro">
+      <p>The following entries, gleaned over the past thirty-some years, reflect Tim Naylor's personal research, observations, and commentaries. Most of his scholarship is indebted to the work of others, as is much of theirs. Innovators and their publications are credited when possible, but virtually all sources can be found on the internet in one form or another. Some musings might appeal to the novice, while others will be of interest only to the most diehard of Maryland furniture cognoscenti. Please peruse at your own peril!</p>
+    </div>
+
+    <div class="essays-grid">
+      <article class="essay-card">
+        <a href="Baltimore%20Carved%20Bellflowers%20(and%20Paterae,%20Plumes,%20and%20Swags)%20Final.pdf" target="_blank">
+          <div class="essay-image">
+            <img src="Donnell-chair-357x600.jpg" alt="Donnell Chair" style="width:100%; height:100%; object-fit:contain;">
+          </div>
+          <div class="essay-body">
+            <h3>Baltimore Carved Bellflowers (and Paterae, Plumes, and Swags)</h3>
+            <p>An examination of carved ornament on Baltimore Federal furniture — bellflowers, paterae, Prince-of-Wales plumes, and swag motifs — tracing the Donnell family's mahogany side chairs, Willow Brook, and painted Chinoiserie suites by Thomas S. Renshaw and John Barnhart, with connections to the Baltimore Museum of Art, Winterthur, and Homewood Museum.</p>
+            <span class="read-more">Read Essay →</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="essay-card">
+        <a href="A%20Maryland%20Chippendale%20Piecrust%20Tea%20Table,%20by%20Process%20of%20Elimination.pages.pdf" target="_blank">
+          <div class="essay-image">
+            <img src="Maryland%20Tea%20Table.jpeg" alt="Maryland Chippendale Piecrust Tea Table" style="width:100%; height:100%; object-fit:contain;">
+          </div>
+          <div class="essay-body">
+            <h3>A Maryland Chippendale Piecrust Tea Table, by Process of Elimination</h3>
+            <p>A detective story in attribution: comparing a mahogany Chippendale piecrust tea table to the Maryland example in the Baltimore Museum of Art, examining ball and claw feet, carved gadrooning, Philadelphia influences, and provincial characteristics that distinguish Maryland craftsmanship from its Pennsylvania counterparts. References Joseph Kindig Jr., Israel Sack, and Frederick, Maryland origins.</p>
+            <span class="read-more">Read Essay →</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="essay-card">
+        <a href="Almost%20Too%20Late,%20An%20Annapolis%20Queen%20Anne%20Desk%20on%20Frame.pdf" target="_blank">
+          <div class="essay-image">
+            <img src="Desk%20o%20Frame.jpg" alt="Annapolis Queen Anne Desk on Frame" style="width:100%; height:100%; object-fit:contain;">
+          </div>
+          <div class="essay-body">
+            <h3>Almost Too Late: An Annapolis Queen Anne Desk on Frame</h3>
+            <p>The story of a Queen Anne mahogany desk on frame, initially catalogued as a British Chippendale bureau, whose American — and specifically Annapolis — origins emerged through careful analysis of its construction, feet, and secondary woods. A case study in distinguishing colonial Maryland furniture from its English and Irish counterparts.</p>
+            <span class="read-more">Read Essay →</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="essay-card">
+        <a href="Charles%20Belt%20and%20Colonial%20Maryland%20Furniture.pdf" target="_blank">
+          <div class="essay-image">
+            <img src="Maryland%20Chippendale%20Side%20Chair.jpeg" alt="Maryland Chippendale Side Chair" style="width:100%; height:100%; object-fit:contain;">
+          </div>
+          <div class="essay-body">
+            <h3>Charles Belt and Colonial Maryland Furniture</h3>
+            <p>Investigating the Queen Anne and Chippendale walnut side chairs attributed to cabinetmaker Charles Belt of Prince George's County, Maryland, and their connections to Georgetown. Drawing on the scholarship of Gregory Weidman, Ronald Hurst, and Jonathan Prown, this essay traces related examples through Philadelphia influences, the Waters family provenance, and colonial Maryland chair-making traditions.</p>
+            <span class="read-more">Read Essay →</span>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR STORY ===== -->
+<section id="story">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-images">
+        <img src="Skyfield%201924%20copy%202.jpg" alt="Skyfield, circa 1924" class="story-photo">
+        <img src="Skyfield%202000%20copy%202.jpg" alt="Skyfield, circa 2000" class="story-photo">
+      </div>
+      <div class="story-text">
+        <p class="section-label">About</p>
+        <h2>Our Story</h2>
+        <hr class="rule">
+        <p>Tim Naylor graduated from Middlebury College with a B.A. in Pre-Architecture. In 1991, he received his MFA from the Maryland Institute College of Art, graduating from the Rinehart School of Sculpture with both the Rinehart Award and The Amalie Rothschild Prize. Tim is a 1998 graduate of The Appraisal Studies Institute at George Washington University in conjunction with The American Society of Appraisers. He has been certified in the Uniform Standards of Appraisal Practice (USPAP) by the ASA.</p>
+        <p>Libby received her B.A. in Art History from Middlebury College in Middlebury, Vermont. After working as a retirement account specialist at T. Rowe Price for several years, Libby worked for Opfer Auctioneering and then the Maryland Historical Society before starting Naylor Antiques.</p>
+        <p>Founded in 1994, Naylor Antiques began as a retail shop on Baltimore's historic Antique Row. With the advent of the internet, we converted to an online shop out of our home by the early 2000s. Subsequently, as internet auctions had already begun to supersede the need for dealers, the final death knell was the almost 40% in combined commissions now imposed by auction houses from seller and buyer. As such, we have now become full time appraisers. Research is our passion, relishing the challenge of investigating, authenticating, and evaluating each and every subject property.</p>
+        <blockquote>Tim and Libby live in a 125 year old family home in Maryland's Green Spring Valley, a setting that has long served as the backdrop for their passionately composed collection of primarily Maryland furniture, decorative arts, and fine art.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Get in Touch</p>
+      <h2>Contact</h2>
+      <hr class="rule rule-center" style="background: var(--white);">
+      <p>Whether you need a formal appraisal or simply have a question about a piece, we welcome your inquiry.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Naylor Antiques</h3>
+        <div class="contact-item">
+          <span class="contact-item-icon">&#9993;</span>
+          <div class="contact-item-text">
+            <h4>Email</h4>
+            <p><a href="mailto:ntique4001@gmail.com">ntique4001@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">&#9742;</span>
+          <div class="contact-item-text">
+            <h4>Telephone</h4>
+            <p><a href="tel:+14104840133">(410) 484-0133</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">&#9872;</span>
+          <div class="contact-item-text">
+            <h4>Location</h4>
+            <p>Stevenson, Maryland</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">&#8483;</span>
+          <div class="contact-item-text">
+            <h4>Website</h4>
+            <p><a href="https://naylorantiques.com">naylorantiques.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="inquiry">Inquiry Type</label>
+          <select id="inquiry" name="inquiry">
+            <option value="">Select an option</option>
+            <option value="insurance">Insurance Appraisal</option>
+            <option value="estate">Estate Appraisal</option>
+            <option value="assessment">Collection Assessment</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your piece or collection..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 Naylor Antiques &mdash; Early American Furniture, Decorative Arts, &amp; Fine Art Consultation and Commentary</p>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// Active nav highlighting
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    if (scrollY >= top) current = section.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+
+// Form handler (placeholder)
+function handleSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for your inquiry. This form will need to be connected to an email service to function on your live site.');
+}
+</script>
+
+</body>
+</html>
